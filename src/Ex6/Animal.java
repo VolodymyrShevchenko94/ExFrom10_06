@@ -27,7 +27,7 @@ public class Animal {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Animal animal = (Animal) o;
-        return age == animal.age && tail == animal.tail && Objects.equals(name, animal.name);
+        return age == animal.age && tail == animal.tail && name.equals(animal.name);
     }
 
     @Override
