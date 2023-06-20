@@ -9,11 +9,11 @@ public class Animal {
 
     @Override
     public String toString() {
-        return "Animal{" +
-                "name='" + name + '\'' +
-                ", age=" + age +
-                ", tail=" + tail +
-                '}';
+        return
+                "Ім'я " + name + '\'' +
+                ", вік =" + age +
+                ", Хвіст =" + " ні "
+                ;
     }
 
     public Animal(String name, int age, boolean tail) {

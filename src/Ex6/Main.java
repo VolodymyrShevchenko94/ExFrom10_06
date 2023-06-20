@@ -4,7 +4,7 @@ import Ex1.Animals;
 
 public class Main {
     public static void main(String[] args) {
-        Animal Vasiliy = new Animal("Васька",45,true);
+        Animal Vasiliy = new Animal("Васька",45,false);
         System.out.println(Vasiliy);
 
 

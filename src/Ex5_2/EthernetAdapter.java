@@ -1,6 +1,6 @@
-package Ex5;
+package Ex5_2;
 
-public class EthernetAdapter extends Device {
+public class EthernetAdapter extends Device{
     private int speed;
     private String mac;
 
@@ -25,4 +25,10 @@ public class EthernetAdapter extends Device {
     public void setMac(String mac) {
         this.mac = mac;
     }
+
+    @Override
+    public String toString() {
+        return super.toString() + ", " + "speed=" + speed + ", mac=" + mac;
+    }
+
 }
