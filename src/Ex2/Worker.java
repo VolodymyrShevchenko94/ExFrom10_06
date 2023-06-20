@@ -56,8 +56,7 @@ public  class Worker {
         this.yearOfEmployment = yearOfEmployment;
     }
 
-    /*Можно переопределить этот медот по-своему, тогда вывод на консоль
-     * будет красивее. А можно и так оставить.*/
+
     @Override
     public String toString() {
         return "\nName: " + name + "\n" +
@@ -66,7 +65,7 @@ public  class Worker {
 
     }
 
-    /*Это метод для проверки трудового стажа.*/
+
     public static String checkWorkExperience(ArrayList<Worker> list, int exp) {
         String result = "";
         for (Worker tmp : list) {
