@@ -18,7 +18,7 @@ public class Main {
             try {
                 productCost = sc.nextDouble();
             }catch (InputMismatchException ex){
-                System.err.println("Помилка вводу. Встановлено значення за замовчуванням - 0 ");
+                System.err.println("Ошибка ");
                 productCost = 0;
             }
             sc.nextLine();

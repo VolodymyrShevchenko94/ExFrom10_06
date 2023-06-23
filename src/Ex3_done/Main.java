@@ -1,4 +1,4 @@
-package Ex3_3;
+package Ex3_done;
 import java.util.*;
 
 public class Main {
@@ -6,15 +6,14 @@ public class Main {
         Scanner scannerInputData = new Scanner(System.in);
         int numberElements = 2;
         List<Price> listPrices = new ArrayList<>();
-        System.out.println("Enter data for" + numberElements + " products:");
+        System.out.println("Введите название товара");
 
         for (int i = 0; i < numberElements; i++) {
-            System.out.println("product " + (i + 1) + ":");
-            System.out.print("Name of product: ");
+            System.out.println("Товар " + (i + 1) + ":");
             String productName = scannerInputData.nextLine();
-            System.out.print("Name of store: ");
+            System.out.print("Введите название магазина: ");
             String storeName = scannerInputData.nextLine();
-            System.out.print("Price of product: ");
+            System.out.print("Введите сумму в грн : ");
             double priceValue = scannerInputData.nextDouble();
             scannerInputData.nextLine();
             Price newPrice = new Price(productName, storeName, priceValue);
@@ -22,7 +21,7 @@ public class Main {
         }
 
         listPrices.sort(Comparator.comparing(Price::getStoreName));
-        System.out.print("Enter the store name to search: ");
+        System.out.print("Введите название магазина ");
         String searchStore = scannerInputData.nextLine();
         System.out.println(searchStore);
         getInfoProductByStore(searchStore, listPrices);
@@ -33,14 +32,14 @@ public class Main {
         boolean isNotFound = true;
         for (Price listPrice : listPrices) {
             if (listPrice.getStoreName().equalsIgnoreCase(searchStore)) {
-                System.out.println("Product: " + listPrice.getProductName());
-                System.out.println("Store: " + listPrice.getStoreName());
-                System.out.println("Price: " + listPrice.getProductPrice());
+                System.out.println("Продукт: " + listPrice.getProductName());
+                System.out.println("Магазин: " + listPrice.getStoreName());
+                System.out.println("Цена: " + listPrice.getProductPrice());
                 isNotFound = false;
             }
         }
         if (isNotFound) {
-            throw new Exception("No such store found");
+            throw new Exception("нет такого магазина");
         }
     }
 

@@ -1,4 +1,4 @@
-package Ex3_3;
+package Ex3_done;
 
 public class Price {
     private String storeName;
