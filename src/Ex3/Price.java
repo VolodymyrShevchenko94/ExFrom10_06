@@ -1,6 +1,9 @@
 package Ex3;
 
+import java.util.ArrayList;
+
 public class Price {
+    ArrayList<Integer> arrayList = new ArrayList<>();
     private String name;
     private String ShopName;
     private double price;
@@ -33,6 +36,12 @@ public class Price {
 
     public void setPrice(double price) {
         this.price = price;
+    }
+
+    public void addElement(int element) {
+        arrayList.add(element);
+
+
     }
 
 
