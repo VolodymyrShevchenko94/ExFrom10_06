@@ -13,6 +13,10 @@ public class Main {
         System.out.println(translater.getElementByIndex(2));
         System.out.println("Общее колличество элементов " + translater.getTotalNumberElement());
 
+        Words pairs = new Words<>("Hello", "Привет");
+
+
+
 
     }
 }
